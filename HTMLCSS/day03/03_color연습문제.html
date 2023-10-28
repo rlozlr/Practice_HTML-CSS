@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color 연습문제</title>
+        <!-- 
+        div 3개 만들어
+        naver, google, daum 사이트로 연결(새창으로 연결)되게 하고,
+        각각 div의 색과 모양을 달리하여 스타일 주기
+        링크의 색도 변경
+        -->
+     <style>
+        div{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        .naver{
+            width: 60px;
+            font-weight: bolder;
+            background-color: #f3fab1;
+        }
+        .naver a{
+            color: rgb(39, 201, 39);
+        }
+        .google{
+            width: 80px;
+            font-weight: lighter;
+            background-color: rgb(227, 223, 223);
+        }
+        .google a{
+            color: red;
+        }
+        .daum{
+            width: 100px;
+            font-weight: bold;
+            background-color: rgb(75, 123, 187);
+        }
+        .daum a{
+            color: rgb(255, 217, 0);
+        }
+        
+        /* ul>li*10 1~10까지 값을 쓰고, 
+        짝수 : 빨간색
+        3,6,9 : 초록색
+        1, 10 :굵게 처리
+        뒤 요소에 .을 추가 */
+
+        ul>li{
+            list-style: none;
+            display: inline;
+            /* inline 요소는 요소끼리 서로 한 줄에(=바로 옆에) 위치할 수 있음
+            대표적인 inline 엘리먼트 : span, a, em 태그 등
+            inline 엘리먼트는 해당 태그가 마크업하고 있는 컨텐츠의 크기만큼만 
+            공간을 차지하도록 되어있어서 width와 height 속성을 지정해도 효과가 적용되지 않음
+            margin, padding 속성은 좌우만 반영, 상하는 반영이 되지 않음 */
+            margin-left: 20px;
+        }
+        ul>li:nth-child(2n){
+            color: red;
+        }
+        ul>li:nth-child(3n){
+            color: green; 
+        }
+        ul>li:first-child, ul>li:last-child{
+            font-weight: bold;
+        }
+        li::after{
+            content: ".";
+        }
+     </style>
+</head>
+<body>
+    <div class="naver"><a href="http://www.naver.com" target="_blank">naver</a></div>
+    <div class="google"><a href="http://www.google.com" target="_blank">google</a></div>
+    <div class="daum"><a href="http://www.daum.net" target="_blank">daum</a></div>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+</body>
+</html>
