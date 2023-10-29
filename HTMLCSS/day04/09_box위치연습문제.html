@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box 위치 연습문제</title>
+    <style>
+        .top{
+            height: 150px;
+            background-color: rgb(14, 1, 24);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(20, 161, 102);
+            position: relative;
+            float: left;
+        }
+        .bottom{
+            width: 500px;
+            height: 500px;
+            background-color: midnightblue;
+            display: flex;
+            justify-content: center;    /* 가로 기준 */
+            align-items: center;    /* 세로 기준 */
+        }
+        .centerBox{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(20, 161, 102);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="bottom">
+        <div class="centerBox"></div>
+    </div>
+</body>
+</html>

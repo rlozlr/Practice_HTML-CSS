@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 연습문제</title>
+    <!-- p-box 안에 box 3개 구성 -->
+    <!-- 해당 3개 박스가 화면을 꽉차게 동일한 크기로 구성 -->
+    <style>
+        .p-box{
+            display: block;
+            clear: both;     /* float 해제 */
+            height: 100vh;  /* 화면 창 높이에 맞게 설정 (세로로 꽉 차게 함) */
+        }
+        .p-box>div{
+            width: calc(100%/3);
+            height: 100%;
+            float: left;
+        }
+        .box1{
+            background-color: rgb(147, 0, 0);
+        }
+        .box2{
+            background-color: rgb(196, 133, 133);
+        }
+        .box3{
+            background-color: rgb(183, 51, 51);
+        }
+    </style>
+</head>
+<body>
+    <div class="p-box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

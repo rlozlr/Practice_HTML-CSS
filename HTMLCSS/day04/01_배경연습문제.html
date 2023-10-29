@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 연습문제</title>
+    <style>
+        div.container{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: 1px solid black;
+            color: whitesmoke;
+        }
+        .container>div:first-child{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            border: 1px solid whitesmoke;
+        }
+         /* 두번째 div에게 200*200 bg-color +투명도 rgba/ */
+        .container>div:nth-child(2){
+            width: 200px;
+            height: 200px;
+            background-color: rgba(17, 0, 23, 0.954);
+         }
+         /* 세번째 div에게 300*300 bg-image 설정 */
+        .container>div:nth-child(3){
+            width: 300px;
+            height: 300px;
+            background-image: url("../image/사자.jpg");
+            background-position: center;
+            background-size: cover;
+         }
+         /* 네번째 div에게 100*100 bg-image 설정 */
+        .container>div:nth-child(4){
+            width: 100px;
+            height: 100px;
+            background-image: url("../image/코끼리.jpg");
+            background-position: center;
+            background-size: cover;
+         }
+         /* 마지막 div의 첫번째 div에 300*70 */
+        .container>div:last-child>div:first-child{
+            width: 300px;
+            height: 70px;
+            background-color: rgba(33, 1, 45, 0.954);
+            border: 1px solid wheat;
+         }
+         /* 마지막 div의 두번째 div에 300*170 bg-image 추가 */
+        .container>div:last-child>div:nth-child(2){
+            width: 300px;
+            height: 170px;
+            background-image: url("../image/백조.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+       <h1>여기에 제목이 들어옵니다.</h1>
+    <div class="container">
+        <div>
+            <img src="../image/올빼미.jpg" alt="올빼미" width="100px" height="100px">
+        </div>
+        <div>
+            여기에 본문
+        </div>
+        <div>
+            여기에 본문 하단 이미지
+        </div>
+        <div>
+            여기에 내용 추가
+        </div>
+        <div>
+            <div>
+                푸터내용
+            </div>
+            <div>
+                푸터내용
+            </div>
+        </div>
+    </div>
+</body>
+</html>

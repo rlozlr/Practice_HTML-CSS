@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 연습문제01</title>
+    <style>
+        div.container{
+            display: block;
+        }
+        .container>div{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            color: whitesmoke;
+            font-weight: bold;
+            font-size: large;
+            background-color: cornflowerblue;
+            float: left;
+            margin-left: 10px;
+        }
+        .box:hover{
+            position: relative;
+            background-color: rgb(38, 78, 152);
+            top: 10px;
+            left: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">T</div>
+        <div class="box">H</div>
+        <div class="box">A</div>
+        <div class="box">N</div>
+        <div class="box">K</div>
+        <div class="box">S</div>
+    </div>
+</body>
+</html>
