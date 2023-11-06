@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            border: 1px solid black;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            
+        }
+        header, footer{
+            width: 90%;
+            height: 50px;
+            margin: 10px;
+            border: 3px solid black;
+            font-weight: 700;
+            font-size: 2rem;
+        }
+        main{
+            width: 90%;
+            height: 250px;
+            border: 3px solid black;
+            position: relative;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            box-shadow: 5px 5px 5px rgb(57, 5, 51);
+        }
+        .top{
+            position: absolute;
+            top: calc(100%/9);
+            left: calc(100%/7);
+            background-color: rgb(208, 163, 249);
+            z-index: 3;
+        }
+        .mid{
+            position: absolute;
+            top: calc(100%/3.5);
+            left: calc(100%/3.2);
+            background-color: rgb(159, 49, 255);
+            z-index: 2;
+        }
+        .bottom{
+            position: absolute;
+            top: calc(100%/2.2);
+            left: calc(100%/2);
+            background-color: rgb(86, 8, 154);
+            z-index: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>텍스트</header>
+        <main>
+            <div class="top box"></div>
+            <div class="mid box"></div>
+            <div class="bottom box"></div>
+        </main>
+        <footer>텍스트</footer>
+    </div>
+</body>
+</html>
