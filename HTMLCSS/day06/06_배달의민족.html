@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배달의 민족</title>
+    <style>
+        body{
+            background-color: rgb(42, 193, 188);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header{
+            width: 100%;
+            color: #FFFFFF;
+        }
+        .ani-icon{   /*아이콘이 움직일 범위와 animation 지정*/
+            width: 100%;
+            height: 100px;
+            float: right;
+            animation-name: move;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+        .logo{ /*아이콘 사이즈*/
+            width: 100px;
+            height: 100px;
+            margin-bottom: 30px;
+            background-image: url(../image/배민배달.png);
+            background-size: cover;
+        }
+        @keyframes move {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-30%); }
+        }
+        article{
+            border-radius: 10px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        .menu>.food-img1{
+            border-radius: 10px 10px 0 0;
+            height: 300px;
+            background-image: url(../image/초밥.jpg);
+            background-size: cover;
+        }
+        .menu>.food-img2{
+            border-radius: 10px 10px 0 0;
+            height: 300px;
+            background-image: url(../image/피자.jpg);
+            background-size: cover;
+        }
+        .menu>.food-img3{
+            border-radius: 10px 10px 0 0;
+            height: 300px;
+            background-image: url(../image/햄버거.jpg);
+            background-size: cover;
+        }
+        .menu>.food-img4{
+            border-radius: 10px 10px 0 0;
+            height: 300px;
+            background-image: url(../image/치킨.jpg);
+            background-size: cover;
+        }
+        .menu>.food-img5{
+            border-radius: 10px 10px 0 0;
+            height: 300px;
+            background-image: url(../image/김밥.png);
+            background-size: cover;
+        }
+        .content{
+            background-color: #FFFFFF;
+            border-radius: 0 0 10px 10px;
+        }
+        .content>p:last-child{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>배달의 민족</h1>
+        <h2>넌 배달할 때가 제일 멋있어</h2>
+        <div class="ani-icon">
+            <div class="logo"></div>
+        </div>
+    </header>
+    <article class="menu">
+        <div class="food-img1"></div>
+        <div class="content">
+            <h3>신선한 초밥</h3>
+            <p>신선한 초밥을 부담없이!</p>
+            <p><del>30,000원</del> 5,000원</p>
+            <p>바로결제</p>
+        </div>
+    </article>
+    <article class="menu">
+        <div class="food-img2"></div>
+        <div class="content">
+            <h3>맛있는 피자</h3>
+            <p>치즈가 늘어나는 맛있는 피자!</p>
+            <p><del>30,000원</del> 10,000원</p>
+            <p>바로결제</p>
+        </div>
+    </article>
+    <article class="menu">
+        <div class="food-img3"></div>
+        <div class="content">
+            <h3>뚱뚱한 햄버거</h3>
+            <p>절대 한 입에 먹을 수 없을걸?</p>
+            <p><del>20,000원</del> 12,000원</p>
+            <p>바로결제</p>
+        </div>
+    </article>
+    <article class="menu">
+        <div class="food-img4"></div>
+        <div class="content">
+            <h3>오븐에 구운 치킨</h3>
+            <p>오븐에 구운건 살 안쪄</p>
+            <p><del>25,000원</del> 17,000원</p>
+            <p>바로결제</p>
+        </div>
+    </article>
+    <article class="menu">
+        <div class="food-img5"></div>
+        <div class="content">
+            <h3>영양 가득 김밥</h3>
+            <p>영양 가득 한 입에 쏙!</p>
+            <p><del>5,000원</del> 2,000원</p>
+            <p>바로결제</p>
+        </div>
+    </article>
+</body>
+</html>
